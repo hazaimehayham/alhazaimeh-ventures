@@ -2,15 +2,15 @@ import { createContext, useContext, useState, useEffect, useCallback } from 'rea
 
 /* ── Content, English + Arabic ──────────────────────────────────────────
    UI strings and page content live here so the whole site can switch
-   language and reading direction. Names/brands are transliterated, not
-   invented. Status classes (colour) are language-independent and live in
-   the components. */
+   language and reading direction. English brand: "Al-Hazaimeh Ventures".
+   Arabic brand: "مجموعة الهزايمة" (surname spelled الهزايمة). Status classes
+   (colour) are language-independent and live in the components. */
 
 export const translations = {
   en: {
     dir: 'ltr',
     nav: {
-      brand: 'Alhazaimeh Ventures',
+      brand: 'Al-Hazaimeh Ventures',
       home: 'Home', about: 'About', contact: 'Contact',
       toggleLabel: 'العربية', toggleAria: 'التبديل إلى العربية',
     },
@@ -19,7 +19,7 @@ export const translations = {
       heroTitleA: "Building Tomorrow's",
       heroTitleB: 'Businesses Today',
       heroSub:
-        'Alhazaimeh Ventures is a family holding group with active operations across Healthcare, Energy, and Technology, driven by a commitment to long-term value and community impact.',
+        'Al-Hazaimeh Ventures is a family holding group with active operations across Healthcare, Energy, and Technology, driven by a commitment to long-term value and community impact.',
       ctaStory: 'Discover our story',
       ctaPartner: 'Partner with us',
       facts: [
@@ -64,12 +64,12 @@ export const translations = {
       heroTitleA: 'Built on Trust.',
       heroTitleB: 'Driven by Vision.',
       heroSub:
-        'Alhazaimeh Ventures is a family-led holding group with a simple belief: that good businesses are built patiently, purposefully, and with the community at heart.',
+        'Al-Hazaimeh Ventures is a family-led holding group with a simple belief: that good businesses are built patiently, purposefully, and with the community at heart.',
       missionTitle: 'A Holding Group with Deep Roots',
       missionP1:
         'Founded by Yousef Al-Hazaimeh, the group began with a single pharmacy and a commitment to quality care. Over the years that commitment expanded beyond healthcare, into energy infrastructure and proprietary technology, building a portfolio that serves communities at every level of daily life.',
       missionP2:
-        'Today, Alhazaimeh Ventures operates three pharmacies, is finalising a fuel and EV station, and is developing a proprietary technology platform for the pharmacy sector. Each venture is chosen not just for financial returns, but for the value it brings to the people we serve.',
+        'Today, Al-Hazaimeh Ventures operates three pharmacies, is finalising a fuel and EV station, and is developing a proprietary technology platform for the pharmacy sector. Each venture is chosen not just for financial returns, but for the value it brings to the people we serve.',
       pillars: [
         { icon: 'pharmacy', label: 'Healthcare', sub: '3 Pharmacies' },
         { icon: 'fuel', label: 'Energy', sub: 'Fuel & EV Station' },
@@ -104,7 +104,7 @@ export const translations = {
       leadership: [
         {
           name: 'Yousef Al-Hazaimeh', title: 'Founder & Chairman',
-          bio: 'With decades of entrepreneurial experience, Yousef built the group from a single pharmacy into a diversified holding company. His belief in community-centred business remains the foundation of everything Alhazaimeh Ventures does.',
+          bio: 'With decades of entrepreneurial experience, Yousef built the group from a single pharmacy into a diversified holding company. His belief in community-centred business remains the foundation of everything the group does.',
         },
         {
           name: 'Ayham Al-Hazaimeh', title: 'Managing Director',
@@ -156,18 +156,18 @@ export const translations = {
   ar: {
     dir: 'rtl',
     nav: {
-      brand: 'الحزايمة فينتشرز',
+      brand: 'مجموعة الهزايمة',
       home: 'الرئيسية', about: 'من نحن', contact: 'تواصل معنا',
       toggleLabel: 'English', toggleAria: 'Switch to English',
     },
     home: {
-      heroEyebrow: 'تأسست برؤية، وبُنيت للنمو',
-      heroTitleA: 'نبني أعمال',
-      heroTitleB: 'الغد اليوم',
+      heroEyebrow: 'تأسّست برؤية، وبُنيت للنمو',
+      heroTitleA: 'نبني أعمالَ الغد',
+      heroTitleB: 'اليوم',
       heroSub:
-        'الحزايمة فينتشرز مجموعة عائلية قابضة ذات عمليات نشطة في قطاعات الرعاية الصحية والطاقة والتكنولوجيا، مدفوعة بالتزامٍ بالقيمة طويلة الأمد والأثر المجتمعي.',
-      ctaStory: 'اكتشف قصتنا',
-      ctaPartner: 'كن شريكاً لنا',
+        'مجموعة الهزايمة مجموعةٌ عائلية قابضة ذات عملياتٍ نشطة في قطاعات الرعاية الصحية والطاقة والتكنولوجيا، يقودها التزامٌ بالقيمة طويلة الأمد والأثر في المجتمع.',
+      ctaStory: 'تعرّف على قصتنا',
+      ctaPartner: 'كُن شريكاً لنا',
       facts: [
         { n: '٣', label: 'صيدليات' },
         { n: '١', label: 'محطة وقود' },
@@ -175,86 +175,86 @@ export const translations = {
       ],
       venturesTitle: 'ثلاث ركائز للنمو',
       venturesSub:
-        'كل مشروع مبني على أسسٍ متينة، ومعرفةٍ محلية، وسعيٍ ثابت نحو التميّز التشغيلي.',
+        'كلُّ مشروعٍ مبنيٌّ على أسسٍ متينة، ومعرفةٍ محلية، وسعيٍ دؤوب نحو التميّز التشغيلي.',
       ventures: [
         {
           id: 'pharmacy', icon: 'pharmacy', sector: 'الرعاية الصحية', title: 'سلسلة صيدليات',
-          description: 'ثلاث صيدليات راسخة تخدم مجتمعاتها برعايةٍ دوائية موثوقة ومنتجاتٍ صحية.',
+          description: 'ثلاث صيدليات راسخة تخدم مجتمعاتها برعايةٍ دوائية موثوقة ومنتجاتٍ صحية يومية.',
           brands: ['صيدلية صدف', 'صيدلية كحل', 'صيدلية إدراك'],
           status: 'تعمل حالياً',
         },
         {
           id: 'fuel', icon: 'fuel', sector: 'الطاقة', title: 'محطة وقود وشحن كهربائي',
-          description: 'محطة وقود مصممة لخدمة المنطقة بوقودٍ عالي الجودة، وشحنٍ للمركبات الكهربائية، وخدماتٍ مريحة.',
+          description: 'محطة وقودٍ مصمَّمة لخدمة المنطقة بوقودٍ عالي الجودة، وشحنٍ للسيارات الكهربائية، وخدماتٍ مريحة.',
           brands: [], status: 'تُفتتح قريباً',
         },
         {
-          id: 'tech', icon: 'tech', sector: 'تكنولوجيا الرعاية الصحية', title: 'منصة تقنية خاصة',
-          description: 'منصة تقنية خاصة لقطاع الصيدلة، قيد التطوير حالياً بشكلٍ خاص. التفاصيل متاحة عند الطلب.',
+          id: 'tech', icon: 'tech', sector: 'تكنولوجيا الرعاية الصحية', title: 'منصّة تقنية خاصة',
+          description: 'منصّةٌ تقنية خاصة لقطاع الصيدلة، قيد التطوير حالياً بشكلٍ خاص. التفاصيل متاحة عند الطلب.',
           brands: [], status: 'قيد التطوير',
         },
       ],
       valuesTitle: 'مبادئنا الأساسية',
       values: [
-        { title: 'رؤية طويلة الأمد', desc: 'نستثمر لعقود لا لأرباع السنة. كل قرارٍ نتخذه يراعي الأثر الدائم.' },
-        { title: 'المجتمع أولاً', desc: 'صيدلياتنا ومحطتنا ومشاريعنا التقنية وُجدت لخدمة الناس من حولنا.' },
-        { title: 'التميّز التشغيلي', desc: 'من سلسلة التوريد إلى تجربة العميل، نلتزم بأعلى المعايير في كل التفاصيل.' },
-        { title: 'شراكات موثوقة', desc: 'نبني علاقاتنا مع الشركاء والمورّدين والجهات التنظيمية على النزاهة والمنفعة المتبادلة.' },
+        { title: 'رؤية طويلة الأمد', desc: 'نستثمر لعقودٍ لا لأرباع السنة، ونتّخذ كلَّ قرارٍ وعينُنا على أثره الدائم.' },
+        { title: 'المجتمع أوّلاً', desc: 'وُجدت صيدلياتنا ومحطّتنا ومشاريعنا التقنية لخدمة الناس من حولنا.' },
+        { title: 'التميّز التشغيلي', desc: 'من سلسلة التوريد إلى تجربة العميل، نلتزم بأعلى المعايير في كلِّ تفصيل.' },
+        { title: 'شراكات موثوقة', desc: 'نبني علاقاتنا مع الشركاء والموردين والجهات التنظيمية على النزاهة والمنفعة المتبادلة.' },
       ],
-      ctaTitle: 'مستعدّ لاستكشاف شراكة؟',
-      ctaText: 'سواءٌ كنت علامة تجارية أو مستثمراً أو مورّداً، يسعدنا أن نسمع منك.',
+      ctaTitle: 'هل أنت مستعدٌّ لاستكشاف شراكة؟',
+      ctaText: 'سواءٌ كنت علامةً تجارية أو مستثمراً أو مورّداً، يسعدنا أن نسمع منك.',
       ctaBtn: 'تواصل معنا',
     },
     about: {
       heroEyebrow: 'قصتنا',
-      heroTitleA: 'بُنيت على الثقة.',
-      heroTitleB: 'مدفوعة بالرؤية.',
+      heroTitleA: 'بُنيت على الثقة،',
+      heroTitleB: 'تقودها الرؤية.',
       heroSub:
-        'الحزايمة فينتشرز مجموعة عائلية قابضة تؤمن إيماناً بسيطاً: أن الأعمال الجيدة تُبنى بصبرٍ وهدفٍ والمجتمع في صميمها.',
-      missionTitle: 'مجموعة قابضة بجذورٍ عميقة',
+        'مجموعة الهزايمة مجموعةٌ عائلية قابضة تؤمن بفكرةٍ بسيطة: أنّ الأعمال الجيدة تُبنى بصبرٍ وهدفٍ، والمجتمع في صميمها.',
+      missionTitle: 'مجموعةٌ قابضة بجذورٍ عميقة',
       missionP1:
-        'أسّسها يوسف الحزايمة، وبدأت المجموعة بصيدلية واحدة والتزامٍ برعايةٍ عالية الجودة. وعبر السنين امتدّ ذلك الالتزام إلى ما هو أبعد من الرعاية الصحية، إلى البنية التحتية للطاقة والتكنولوجيا الخاصة، لتتكوّن محفظة تخدم المجتمعات في كل مستويات الحياة اليومية.',
+        'أسّسها يوسف الهزايمة، فبدأت المجموعة بصيدليةٍ واحدة والتزامٍ برعايةٍ عالية الجودة. ومع مرور السنين امتدّ هذا الالتزام إلى ما هو أبعد من الرعاية الصحية، نحو البنية التحتية للطاقة والتكنولوجيا الخاصة، لتنشأ محفظةٌ تخدم المجتمعات في كلِّ مستويات الحياة اليومية.',
       missionP2:
-        'اليوم، تُشغّل الحزايمة فينتشرز ثلاث صيدليات، وتُنجز محطة وقودٍ وشحنٍ كهربائي، وتطوّر منصة تقنية خاصة لقطاع الصيدلة. ويُختار كل مشروع لا للعائد المالي وحده، بل لما يقدّمه من قيمة للناس الذين نخدمهم.',
+        'واليوم، تُشغّل مجموعة الهزايمة ثلاث صيدليات، وتُنجز محطة وقودٍ وشحنٍ كهربائي، وتُطوّر منصّةً تقنية خاصة لقطاع الصيدلة. ويُختار كلُّ مشروعٍ لا لعائده المالي وحده، بل لِما يضيفه من قيمةٍ لِمن نخدمهم.',
       pillars: [
         { icon: 'pharmacy', label: 'الرعاية الصحية', sub: '٣ صيدليات' },
         { icon: 'fuel', label: 'الطاقة', sub: 'محطة وقود وشحن' },
         { icon: 'tech', label: 'التكنولوجيا', sub: 'قيد التطوير' },
       ],
-      timelineTitle: 'من صيدلية واحدة إلى مجموعة متنوعة',
+      timelineTitle: 'من صيدليةٍ واحدة إلى مجموعةٍ متنوّعة',
       timeline: [
-        { year: 'التأسيس', event: 'يؤسّس يوسف الحزايمة الصيدلية الأولى، ليضع حجر الأساس لما سيصبح مجموعةً متعددة القطاعات.' },
-        { year: 'النمو', event: 'تتوسّع محفظة الصيدليات إلى ثلاثة مواقع (صدف، كحل، وإدراك)، لتخدم آلاف العملاء في المنطقة.' },
-        { year: 'التنويع', event: 'ينضمّ أيهم الحزايمة إلى القيادة، وتتّجه المجموعة نحو قطاع الطاقة بمحطة وقودٍ وشحنٍ كهربائي جديدة.' },
-        { year: '٢٠٢٦', event: 'تقترب المحطة من الاكتمال، وتدخل منصة تقنية خاصة لقطاع الصيدلة مرحلة التطوير الخاص، إيذاناً بدخول المجموعة مجال تكنولوجيا الرعاية الصحية.' },
+        { year: 'التأسيس', event: 'يؤسّس يوسف الهزايمة الصيدلية الأولى، واضعاً حجر الأساس لِما سيغدو مجموعةً متعددة القطاعات.' },
+        { year: 'النمو', event: 'تتوسّع محفظة الصيدليات إلى ثلاثة مواقع (صدف، وكحل، وإدراك)، لتخدم آلاف العملاء في المنطقة.' },
+        { year: 'التنويع', event: 'ينضمّ أيهم الهزايمة إلى القيادة، فتتّجه المجموعة نحو قطاع الطاقة بمحطة وقودٍ وشحنٍ كهربائي جديدة.' },
+        { year: '٢٠٢٦', event: 'تقترب المحطة من الاكتمال، وتدخل منصّةٌ تقنية خاصة لقطاع الصيدلة مرحلة التطوير الخاص، إيذاناً بدخول المجموعة مجال تكنولوجيا الرعاية الصحية.' },
       ],
       venturesTitle: 'المشاريع',
       ventures: [
         {
           id: 'pharmacy', icon: 'pharmacy', title: 'سلسلة صيدليات', status: 'تعمل حالياً',
-          description: 'ثلاث صيدليات توفّر المنتجات الدوائية والاستشارات الصحية ورعاية المجتمع. ويعمل كل موقعٍ تحت علامته التجارية الموثوقة.',
+          description: 'ثلاث صيدليات توفّر المنتجات الدوائية والاستشارات الصحية ورعاية المجتمع، ويعمل كلُّ موقعٍ تحت علامته التجارية الموثوقة.',
           brands: ['صيدلية صدف', 'صيدلية كحل', 'صيدلية إدراك'],
         },
         {
-          id: 'fuel', icon: 'fuel', title: 'محطة وقود وشحن كهربائي', status: 'تُفتتح الربع الثالث ٢٠٢٦',
-          description: 'محطة وقودٍ وخدماتٍ مكتملة التجهيز في مرحلة البناء الأخيرة، مع منصّات شحنٍ للمركبات الكهربائية إلى جانب المضخّات التقليدية. صُمّمت حول السلامة والكفاءة وجودة الخدمة.',
+          id: 'fuel', icon: 'fuel', title: 'محطة وقود وشحن كهربائي', status: 'تُفتتح في الربع الثالث ٢٠٢٦',
+          description: 'محطة وقودٍ وخدماتٍ مكتملة التجهيز في مرحلة البناء الأخيرة، مع منصّات شحنٍ للسيارات الكهربائية إلى جانب المضخّات التقليدية، صُمّمت حول السلامة والكفاءة وجودة الخدمة.',
           brands: [],
         },
         {
-          id: 'tech', icon: 'tech', title: 'منصة تقنية خاصة', status: 'قيد التطوير',
-          description: 'منصة تقنية خاصة لقطاع الصيدلة، قيد التطوير حالياً بشكلٍ خاص. التفاصيل متاحة عند الطلب.',
+          id: 'tech', icon: 'tech', title: 'منصّة تقنية خاصة', status: 'قيد التطوير',
+          description: 'منصّةٌ تقنية خاصة لقطاع الصيدلة، قيد التطوير حالياً بشكلٍ خاص. التفاصيل متاحة عند الطلب.',
           brands: [],
         },
       ],
       leadershipTitle: 'القيادة',
       leadership: [
         {
-          name: 'يوسف الحزايمة', title: 'المؤسس ورئيس مجلس الإدارة',
-          bio: 'بخبرةٍ ريادية تمتدّ لعقود، بنى يوسف المجموعة من صيدلية واحدة إلى شركة قابضة متنوّعة. ويبقى إيمانه بالأعمال المتمحورة حول المجتمع أساس كل ما تقوم به الحزايمة فينتشرز.',
+          name: 'يوسف الهزايمة', title: 'المؤسّس ورئيس مجلس الإدارة',
+          bio: 'بخبرةٍ ريادية تمتدّ لعقود، بنى يوسف المجموعة من صيدليةٍ واحدة إلى شركةٍ قابضة متنوّعة. ويبقى إيمانه بالأعمال المتمحورة حول المجتمع أساساً لكلِّ ما تقوم به المجموعة.',
         },
         {
-          name: 'أيهم الحزايمة', title: 'المدير التنفيذي',
-          bio: 'يقود أيهم العمليات اليومية والنمو الاستراتيجي عبر القطاعات الثلاثة: استكشاف أسواقٍ جديدة، وبناء الشراكات، وقيادة الفصل التالي من مسيرة المجموعة.',
+          name: 'أيهم الهزايمة', title: 'المدير التنفيذي',
+          bio: 'يقود أيهم العمليات اليومية والنمو الاستراتيجي عبر القطاعات الثلاثة: استكشاف الأسواق الجديدة، وبناء الشراكات، وقيادة الفصل التالي من مسيرة المجموعة.',
         },
       ],
     },
@@ -262,9 +262,9 @@ export const translations = {
       heroEyebrow: 'لنتواصل',
       heroTitleA: 'تواصل ', heroTitleB: 'معنا',
       heroSub:
-        'سواءٌ كنت علامة تجارية تستكشف شراكة، أو مستثمراً، أو مورّداً، فنحن دائماً منفتحون على الحوارات الهادفة.',
+        'سواءٌ كنت علامةً تجارية تستكشف شراكة، أو مستثمراً، أو مورّداً، فنحن دائماً منفتحون على الحوارات الهادفة.',
       detailsTitle: 'بيانات التواصل',
-      labelEmail: 'البريد الإلكتروني', labelWebsite: 'الموقع الإلكتروني', labelOps: 'العمليات',
+      labelEmail: 'البريد الإلكتروني', labelWebsite: 'الموقع الإلكتروني', labelOps: 'مجالات العمل',
       opsValue: 'الرعاية الصحية · الطاقة · التكنولوجيا',
       topicsTitle: 'ما نرحّب به',
       topics: [
@@ -281,9 +281,9 @@ export const translations = {
       send: 'إرسال الرسالة', sending: 'جارٍ الإرسال…',
       errName: 'الرجاء إدخال اسمك.',
       errEmail: 'الرجاء إدخال بريدٍ إلكتروني صحيح.',
-      errMessage: 'الرجاء إدخال رسالة.',
-      errSubmit: 'حدث خطأ ما. الرجاء مراسلتنا مباشرة عبر البريد.',
-      sentTitle: 'تم إرسال الرسالة', sentText: 'شكراً لتواصلك معنا. سنعاود الرد عليك قريباً.',
+      errMessage: 'الرجاء كتابة رسالتك.',
+      errSubmit: 'تعذّر الإرسال. الرجاء مراسلتنا مباشرةً عبر البريد الإلكتروني.',
+      sentTitle: 'تم إرسال رسالتك', sentText: 'شكراً لتواصلك معنا، سنعاود الردّ عليك قريباً.',
       sentAgain: 'إرسال رسالة أخرى',
     },
     footer: {

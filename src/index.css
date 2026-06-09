@@ -555,13 +555,59 @@ p { text-wrap: pretty; }
 [dir="rtl"] .value-card__line { margin-inline-start: auto; }
 [dir="rtl"] .hero__facts li + li::before { left: auto; right: -22px; }
 
-/* ── ARABIC TYPOGRAPHY ── */
+/* ── ARABIC TYPOGRAPHY ──
+   Amiri (elegant Naskh serif) mirrors Cormorant for headings; IBM Plex
+   Sans Arabic mirrors Inter for body. Arabic needs more size and leading
+   to read comfortably, so base size, line-height, and small labels are
+   bumped up across the board. */
 html[lang="ar"] {
-  --font-serif: 'Markazi Text', 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Tajawal', 'Inter', system-ui, sans-serif;
+  --font-serif: 'Amiri', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'IBM Plex Sans Arabic', 'Inter', system-ui, sans-serif;
 }
-html[lang="ar"] body { line-height: 1.8; }
-html[lang="ar"] .hero__title, html[lang="ar"] .page-hero h1 { line-height: 1.2; font-weight: 500; }
+html[lang="ar"] body { font-size: 17px; line-height: 1.95; }
+
+/* Headings: Amiri reads light at display sizes, so add weight + leading */
+html[lang="ar"] .hero__title { line-height: 1.35; font-weight: 700; }
+html[lang="ar"] .page-hero h1 { line-height: 1.4; font-weight: 700; }
+html[lang="ar"] .section__header h2,
+html[lang="ar"] .mission-block__text h2,
+html[lang="ar"] .cta-banner h2,
+html[lang="ar"] .contact-info h2,
+html[lang="ar"] .contact-form h2 { line-height: 1.5; font-weight: 700; }
+html[lang="ar"] .venture-card h3,
+html[lang="ar"] .venture-detail-card__header h3,
+html[lang="ar"] .leader-card h3,
+html[lang="ar"] .value-card h4 { line-height: 1.5; font-weight: 700; }
+
+/* Body copy: larger, airier for legibility */
+html[lang="ar"] .hero__sub,
+html[lang="ar"] .page-hero__sub,
+html[lang="ar"] .section__sub,
+html[lang="ar"] .venture-card__desc,
+html[lang="ar"] .value-card p,
+html[lang="ar"] .mission-block__text p,
+html[lang="ar"] .timeline__event,
+html[lang="ar"] .venture-detail-card > p,
+html[lang="ar"] .leader-card__bio,
+html[lang="ar"] .contact-topic,
+html[lang="ar"] .pillar-badge__text span,
+html[lang="ar"] .footer__links a,
+html[lang="ar"] .footer__contact a,
+html[lang="ar"] .footer__contact p { font-size: 15.5px; line-height: 1.95; }
+
+/* Small labels / UI: nudge up so Arabic stays readable */
+html[lang="ar"] .navbar__links a { font-size: 14px; }
+html[lang="ar"] .eyebrow, html[lang="ar"] .hero__eyebrow { font-size: 13px; }
+html[lang="ar"] .venture-card__sector { font-size: 12px; }
+html[lang="ar"] .venture-card__status { font-size: 12px; }
+html[lang="ar"] .btn, html[lang="ar"] .lang-toggle { font-size: 14px; }
+html[lang="ar"] .contact-item__label,
+html[lang="ar"] .form-group label,
+html[lang="ar"] .contact-topics h4,
+html[lang="ar"] .footer__links h4,
+html[lang="ar"] .footer__contact h4 { font-size: 13px; }
+html[lang="ar"] .pillar-badge__text strong { font-size: 15px; }
+
 /* Letter-spacing breaks Arabic letter joining; reset on tracked elements */
 html[lang="ar"] .eyebrow, html[lang="ar"] .hero__eyebrow, html[lang="ar"] .navbar__links a,
 html[lang="ar"] .btn, html[lang="ar"] .lang-toggle, html[lang="ar"] .venture-card__sector,
@@ -569,5 +615,5 @@ html[lang="ar"] .venture-card__status, html[lang="ar"] .contact-item__label,
 html[lang="ar"] .contact-topics h4, html[lang="ar"] .form-group label,
 html[lang="ar"] .leader-card__title, html[lang="ar"] .footer__links h4,
 html[lang="ar"] .footer__contact h4, html[lang="ar"] .footer__tagline,
-html[lang="ar"] .footer__bottom p, html[lang="ar"] .stat__label,
-html[lang="ar"] .timeline__year { letter-spacing: normal; }
+html[lang="ar"] .footer__bottom p, html[lang="ar"] .timeline__year,
+html[lang="ar"] .navbar__logo { letter-spacing: normal; }
