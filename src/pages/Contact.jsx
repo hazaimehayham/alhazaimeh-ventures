@@ -58,14 +58,14 @@ export default function Contact() {
               <div className="contact-item__icon">🏢</div>
               <div>
                 <p className="contact-item__label">Operations</p>
-                <p>Healthcare · Energy · Food & Beverage</p>
+                <p>Healthcare · Energy · Technology</p>
               </div>
             </div>
 
             <div className="contact-topics">
               <h4>What We're Open To</h4>
               {[
-                'Franchise & licensing partnerships',
+                'Strategic & investment partnerships',
                 'Supplier & distribution agreements',
                 'Investment & joint ventures',
                 'General business enquiries',

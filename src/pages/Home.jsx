@@ -117,7 +117,7 @@ export default function Home() {
               { title: 'Long-Term Vision', desc: 'We invest for decades, not quarters. Every decision is made with lasting impact in mind.' },
               { title: 'Community First', desc: 'Our pharmacies, station, and technology ventures exist to serve the people around us.' },
               { title: 'Operational Excellence', desc: 'From supply chain to customer experience, we hold every detail to the highest standard.' },
-              { title: 'Trusted Partnerships', desc: 'We build relationships — with franchisors, suppliers, and regulators — based on integrity.' },
+              { title: 'Trusted Partnerships', desc: 'We build relationships — with partners, suppliers, and regulators — based on integrity and mutual value.' },
             ].map(v => (
               <div className="value-card" key={v.title}>
                 <div className="value-card__line" />
