@@ -26,7 +26,7 @@ const ventures = [
     sector: 'Healthcare Technology',
     title: 'Proprietary Tech Platform',
     description:
-      'Alhazaimeh Ventures is developing a proprietary technology platform for the pharmacy sector. Currently in private development — details available upon request.',
+      'Alhazaimeh Ventures is developing a proprietary technology platform for the pharmacy sector. Currently in private development; details available on request.',
     brands: [],
     status: 'In Development',
     statusClass: 'status--progress',
@@ -47,7 +47,7 @@ export default function Home() {
           </h1>
           <p className="hero__sub">
             Alhazaimeh Ventures is a diversified holding group with active operations
-            across Healthcare, Energy, and Technology — driven by a commitment
+            across Healthcare, Energy, and Technology, driven by a commitment
             to long-term value and community impact.
           </p>
           <div className="hero__cta">
@@ -56,29 +56,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero__stats">
-          <div className="stat">
-            <span className="stat__number gold">3</span>
-            <span className="stat__label">Pharmacies</span>
-          </div>
-          <div className="stat__divider" />
-          <div className="stat">
-            <span className="stat__number gold">1</span>
-            <span className="stat__label">Petrol Station</span>
-          </div>
-          <div className="stat__divider" />
-          <div className="stat">
-            <span className="stat__number gold">3</span>
-            <span className="stat__label">Sectors</span>
-          </div>
-        </div>
+        <ul className="hero__facts">
+          <li><span className="hero__fact-n">Three</span> pharmacies</li>
+          <li><span className="hero__fact-n">One</span> fuel station</li>
+          <li><span className="hero__fact-n">Three</span> sectors</li>
+        </ul>
       </section>
 
       {/* ── VENTURES ── */}
       <section className="section ventures">
         <div className="container">
           <div className="section__header">
-            <p className="eyebrow">Our Portfolio</p>
             <h2>Three Pillars of Growth</h2>
             <p className="section__sub">
               Each venture is built on strong fundamentals, local insight, and a
@@ -109,7 +97,6 @@ export default function Home() {
       <section className="section values">
         <div className="container">
           <div className="section__header">
-            <p className="eyebrow">What Drives Us</p>
             <h2>Our Core Principles</h2>
           </div>
           <div className="values__grid">
@@ -117,7 +104,7 @@ export default function Home() {
               { title: 'Long-Term Vision', desc: 'We invest for decades, not quarters. Every decision is made with lasting impact in mind.' },
               { title: 'Community First', desc: 'Our pharmacies, station, and technology ventures exist to serve the people around us.' },
               { title: 'Operational Excellence', desc: 'From supply chain to customer experience, we hold every detail to the highest standard.' },
-              { title: 'Trusted Partnerships', desc: 'We build relationships — with partners, suppliers, and regulators — based on integrity and mutual value.' },
+              { title: 'Trusted Partnerships', desc: 'We build relationships with partners, suppliers, and regulators, grounded in integrity and mutual value.' },
             ].map(v => (
               <div className="value-card" key={v.title}>
                 <div className="value-card__line" />
@@ -134,7 +121,7 @@ export default function Home() {
         <div className="container cta-banner__inner">
           <div>
             <h2>Ready to Explore a Partnership?</h2>
-            <p>Whether you're a brand, investor, or supplier — we'd love to connect.</p>
+            <p>Whether you're a brand, investor, or supplier, we'd like to hear from you.</p>
           </div>
           <Link to="/contact" className="btn btn--gold">Get in Touch</Link>
         </div>

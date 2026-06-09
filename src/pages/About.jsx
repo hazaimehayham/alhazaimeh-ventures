@@ -1,6 +1,6 @@
 const timeline = [
   { year: 'Foundation', event: 'Yousef Al-Hazaimeh establishes the first pharmacy, laying the cornerstone of what would become a multi-sector venture group.' },
-  { year: 'Growth', event: 'The pharmacy portfolio expands to three locations — Sadaf, Kahal, and Edrak — serving thousands of customers across the region.' },
+  { year: 'Growth', event: 'The pharmacy portfolio expands to three locations (Sadaf, Kahal, and Edrak), serving thousands of customers across the region.' },
   { year: 'Diversification', event: 'Ayham Al-Hazaimeh joins leadership, and the group sets its sights on the energy sector with a new petrol station project.' },
   { year: '2026', event: 'The petrol station nears completion. A proprietary technology platform for the pharmacy sector enters private development, marking the group\'s expansion into Healthcare Technology.' },
 ]
@@ -14,7 +14,7 @@ const leadership = [
   {
     name: 'Ayham Al-Hazaimeh',
     title: 'Managing Director',
-    bio: 'Ayham leads day-to-day operations and strategic growth initiatives across all three sectors. He brings a modern approach to expansion — identifying new markets, forging partnerships, and driving the group\'s next chapter.',
+    bio: 'Ayham leads day-to-day operations and strategic growth initiatives across all three sectors. He brings a modern approach to expansion: identifying new markets, forging partnerships, and driving the group\'s next chapter.',
   },
 ]
 
@@ -38,13 +38,12 @@ export default function About() {
       <section className="section">
         <div className="container mission-block">
           <div className="mission-block__text">
-            <p className="eyebrow">Who We Are</p>
             <h2>A Holding Group with Deep Roots</h2>
             <p>
               Founded by Yousef Al-Hazaimeh, the group began with a single pharmacy and
               an unwavering commitment to quality care. Over the years, that commitment
-              expanded beyond healthcare — into energy infrastructure and proprietary
-              technology — creating a portfolio that serves communities at every level of daily life.
+              expanded beyond healthcare into energy infrastructure and proprietary
+              technology, creating a portfolio that serves communities at every level of daily life.
             </p>
             <p>
               Today, Alhazaimeh Ventures operates three pharmacies, is finalising a
@@ -73,7 +72,6 @@ export default function About() {
       <section className="section section--dark">
         <div className="container">
           <div className="section__header">
-            <p className="eyebrow">Our Journey</p>
             <h2>From One Pharmacy to a Diversified Group</h2>
           </div>
           <div className="timeline">
@@ -94,7 +92,6 @@ export default function About() {
       <section className="section">
         <div className="container">
           <div className="section__header">
-            <p className="eyebrow">Our Portfolio</p>
             <h2>The Ventures</h2>
           </div>
           <div className="ventures-detail">
@@ -119,7 +116,7 @@ export default function About() {
                 <span>⛽</span>
                 <div>
                   <h3>Petrol Station</h3>
-                  <span className="status--soon">Opening Soon — Q3 2026</span>
+                  <span className="status--soon">Opening Q3 2026</span>
                 </div>
               </div>
               <p>A fully equipped fuel and convenience station in its final construction phase. Designed to deliver a premium refuelling experience with a focus on safety, efficiency, and service quality.</p>
@@ -133,7 +130,7 @@ export default function About() {
                   <span className="status--progress">In Development</span>
                 </div>
               </div>
-              <p>Alhazaimeh Ventures is developing a proprietary technology platform for the pharmacy sector. Currently in private development — details available upon request.</p>
+              <p>Alhazaimeh Ventures is developing a proprietary technology platform for the pharmacy sector. Currently in private development; details available on request.</p>
             </div>
           </div>
         </div>
@@ -143,7 +140,6 @@ export default function About() {
       <section className="section section--dark">
         <div className="container">
           <div className="section__header">
-            <p className="eyebrow">The People Behind It</p>
             <h2>Leadership</h2>
           </div>
           <div className="leadership-grid">

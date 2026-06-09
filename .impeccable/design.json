@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-06-09T00:00:00.000Z",
+  "title": "Design System: Alhazaimeh Ventures",
+  "extensions": {
+    "colorMeta": {
+      "gold": { "role": "primary", "displayName": "Antique Gold", "canonical": "oklch(0.58 0.09 75)", "tonalRamp": ["oklch(0.22 0.03 75)", "oklch(0.31 0.05 75)", "oklch(0.40 0.07 75)", "oklch(0.50 0.085 72)", "oklch(0.58 0.09 75)", "oklch(0.68 0.10 80)", "oklch(0.78 0.09 85)", "oklch(0.90 0.05 88)"] },
+      "gold-light": { "role": "primary", "displayName": "Brass Highlight", "canonical": "oklch(0.74 0.10 85)", "tonalRamp": ["oklch(0.30 0.05 85)", "oklch(0.40 0.07 85)", "oklch(0.50 0.09 85)", "oklch(0.60 0.10 85)", "oklch(0.74 0.10 85)", "oklch(0.82 0.09 87)", "oklch(0.90 0.06 90)", "oklch(0.96 0.03 92)"] },
+      "gold-deep": { "role": "primary", "displayName": "Deep Gold", "canonical": "oklch(0.50 0.085 72)", "tonalRamp": ["oklch(0.20 0.03 72)", "oklch(0.28 0.05 72)", "oklch(0.36 0.07 72)", "oklch(0.43 0.08 72)", "oklch(0.50 0.085 72)", "oklch(0.60 0.09 76)", "oklch(0.72 0.08 82)", "oklch(0.86 0.05 86)"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "oklch(0.21 0.01 75)", "tonalRamp": ["oklch(0.15 0.01 75)", "oklch(0.21 0.01 75)", "oklch(0.30 0.012 75)", "oklch(0.43 0.015 70)", "oklch(0.58 0.012 75)", "oklch(0.74 0.008 80)", "oklch(0.88 0.004 90)", "oklch(0.96 0.002 100)"] },
+      "ink-muted": { "role": "neutral", "displayName": "Muted Ink", "canonical": "oklch(0.43 0.015 70)", "tonalRamp": ["oklch(0.19 0.01 70)", "oklch(0.28 0.012 70)", "oklch(0.36 0.014 70)", "oklch(0.43 0.015 70)", "oklch(0.55 0.013 72)", "oklch(0.70 0.01 78)", "oklch(0.84 0.006 88)", "oklch(0.94 0.003 95)"] },
+      "ink-surface": { "role": "neutral", "displayName": "Ink Surface (Espresso)", "canonical": "oklch(0.19 0.01 70)", "tonalRamp": ["oklch(0.14 0.01 70)", "oklch(0.19 0.01 70)", "oklch(0.26 0.012 70)", "oklch(0.34 0.014 72)", "oklch(0.46 0.014 74)", "oklch(0.62 0.01 78)", "oklch(0.80 0.006 86)", "oklch(0.93 0.003 95)"] },
+      "bg": { "role": "neutral", "displayName": "Paper White", "canonical": "oklch(0.987 0.002 100)", "tonalRamp": ["oklch(0.20 0.004 100)", "oklch(0.34 0.004 100)", "oklch(0.50 0.004 100)", "oklch(0.66 0.003 100)", "oklch(0.82 0.003 100)", "oklch(0.93 0.003 100)", "oklch(0.96 0.002 100)", "oklch(0.987 0.002 100)"] },
+      "surface": { "role": "neutral", "displayName": "Surface", "canonical": "oklch(0.96 0.002 100)", "tonalRamp": ["oklch(0.20 0.004 100)", "oklch(0.34 0.004 100)", "oklch(0.50 0.004 100)", "oklch(0.66 0.003 100)", "oklch(0.82 0.003 100)", "oklch(0.93 0.003 100)", "oklch(0.96 0.002 100)", "oklch(0.99 0.002 100)"] },
+      "surface-deep": { "role": "neutral", "displayName": "Surface Deep", "canonical": "oklch(0.93 0.003 100)", "tonalRamp": ["oklch(0.20 0.004 100)", "oklch(0.34 0.004 100)", "oklch(0.50 0.004 100)", "oklch(0.66 0.003 100)", "oklch(0.82 0.003 100)", "oklch(0.90 0.003 100)", "oklch(0.93 0.003 100)", "oklch(0.97 0.002 100)"] },
+      "border": { "role": "neutral", "displayName": "Hairline", "canonical": "oklch(0.89 0.002 100)", "tonalRamp": ["oklch(0.30 0.004 100)", "oklch(0.45 0.004 100)", "oklch(0.60 0.003 100)", "oklch(0.74 0.003 100)", "oklch(0.84 0.002 100)", "oklch(0.89 0.002 100)", "oklch(0.94 0.002 100)", "oklch(0.98 0.001 100)"] },
+      "positive": { "role": "tertiary", "displayName": "Positive Green", "canonical": "oklch(0.62 0.16 150)", "tonalRamp": ["oklch(0.25 0.06 150)", "oklch(0.34 0.09 150)", "oklch(0.44 0.12 150)", "oklch(0.53 0.14 150)", "oklch(0.62 0.16 150)", "oklch(0.72 0.14 152)", "oklch(0.84 0.10 154)", "oklch(0.94 0.05 156)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero and page-hero headlines only; Cormorant 300, ceiling ~88px." },
+      "headline": { "displayName": "Headline", "purpose": "Section titles in Cormorant 400." },
+      "title": { "displayName": "Title", "purpose": "Card and detail headings in Cormorant 400." },
+      "body": { "displayName": "Body", "purpose": "All running copy in Inter; measure capped 65-75ch." },
+      "label": { "displayName": "Label", "purpose": "Form labels, nav, the single earned kicker; uppercase Inter 600, rationed." }
+    },
+    "shadows": [
+      { "name": "hover-lift", "value": "0 2px 24px rgba(160,120,40,0.08)", "purpose": "Faint gold-tinted glow under raised cards and the hero stat cluster, paired with a small translateY on hover." },
+      { "name": "nav-veil", "value": "0 1px 24px rgba(140,110,56,0.08)", "purpose": "Scrolled navbar only, alongside backdrop-filter blur(12px)." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "0.25s ease", "purpose": "Default state transition for hover, color, and border changes." },
+      { "name": "ease-nav", "value": "0.3s ease", "purpose": "Navbar veil and mobile menu slide." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "900px" },
+      { "name": "mobile", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The gold-seal CTA; the one strongly colored action on a view.",
+      "html": "<button class=\"ds-btn-primary\">Partner with us</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: #A07828; color: #FBFBFA; padding: 14px 32px; border: none; border-radius: 6px; font-family: Inter, system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: background 0.25s ease, transform 0.25s ease, color 0.25s ease; } .ds-btn-primary:hover { background: #C9A84C; color: #1A1712; transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 2px solid #8A6620; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action; quiet until hovered, then warms to gold.",
+      "html": "<button class=\"ds-btn-outline\">Discover our story</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #1A1712; padding: 14px 32px; border: 1px solid rgba(160,120,40,0.35); border-radius: 6px; font-family: Inter, system-ui, sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease; } .ds-btn-outline:hover { border-color: #A07828; color: #A07828; transform: translateY(-2px); } .ds-btn-outline:focus-visible { outline: 2px solid #8A6620; outline-offset: 2px; }"
+    },
+    {
+      "name": "Venture Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Flat surface card with hairline border and a gold-tinted hover lift; holds one venture.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-card-sector\">Healthcare</span><h3 class=\"ds-card-title\">Pharmacy Chain</h3><p class=\"ds-card-desc\">Three established pharmacies serving their communities with trusted care.</p></article>",
+      "css": ".ds-card { background: #F4F4F2; border: 1px solid #DEDEDB; border-radius: 8px; padding: 36px 32px; transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease; } .ds-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-4px); box-shadow: 0 2px 24px rgba(160,120,40,0.08); } .ds-card-sector { display: block; font-family: Inter, system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #8A6620; margin-bottom: 8px; } .ds-card-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 26px; font-weight: 400; color: #1A1712; margin: 0 0 14px; } .ds-card-desc { font-family: Inter, system-ui, sans-serif; font-size: 14px; line-height: 1.75; color: #5E564B; margin: 0; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled field on a sunken surface; gold-tint border on focus, no glow.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-label\" for=\"ds-email\">Email Address</label><input class=\"ds-input\" id=\"ds-email\" type=\"email\" placeholder=\"your@email.com\" /></div>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 8px; } .ds-label { font-family: Inter, system-ui, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #5E564B; } .ds-input { background: #ECECE9; border: 1px solid #DEDEDB; border-radius: 6px; padding: 14px 16px; font-family: Inter, system-ui, sans-serif; font-size: 14px; color: #1A1712; outline: none; transition: border-color 0.25s ease; } .ds-input::placeholder { color: #5E564B; } .ds-input:focus { border-color: rgba(201,168,76,0.5); }"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill tag for venture brand names; the tinted variant signals venture state.",
+      "html": "<span class=\"ds-chip\">Sadaf Pharmacy</span> <span class=\"ds-chip ds-chip-active\">Operational</span>",
+      "css": ".ds-chip { display: inline-block; padding: 6px 16px; border: 1px solid #DEDEDB; border-radius: 999px; font-family: Inter, system-ui, sans-serif; font-size: 12px; color: #5E564B; } .ds-chip-active { background: rgba(22,163,74,0.10); border-color: rgba(22,163,74,0.25); color: #15803D; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-size: 10px; }"
+    },
+    {
+      "name": "Navbar Link",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Uppercase nav link with a center-out gold underline on hover/active.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">Home</a><a class=\"ds-nav-link ds-nav-link-active\" href=\"#\">About</a><a class=\"ds-nav-link\" href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 40px; } .ds-nav-link { position: relative; font-family: Inter, system-ui, sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #5E564B; text-decoration: none; transition: color 0.25s ease; } .ds-nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 1px; background: #A07828; transform: scaleX(0); transition: transform 0.25s ease; } .ds-nav-link:hover, .ds-nav-link-active { color: #1A1712; } .ds-nav-link:hover::after, .ds-nav-link-active::after { transform: scaleX(1); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Holding House",
+    "overview": "One calm, well-bred voice speaking across very different businesses: pharmacies, a fuel station, and a healthcare-technology platform read as facets of a single house. Established, refined, quietly confident; premium without flash. The system is light and spacious on a true near-white surface (not cream) with a deep warm-ink anchor for hero moments. Cormorant Garamond carries headlines with letterpress poise; Inter does the plain, legible body work. Warmth lives in the gold accent and the type, never in a beige background. Components are crisp and modern: hairline borders, tight radii, restraint over ornament.",
+    "keyCharacteristics": [
+      "True near-white surface with a deep warm-ink anchor; warmth carried by gold and serif type, never by a beige body.",
+      "Serif display (Cormorant) against sans body (Inter): heritage meeting plain confidence.",
+      "Gold used as a rare seal (<=10% of any screen), not a wash.",
+      "Crisp components: hairline borders, 6-8px radii, flat at rest.",
+      "Bilingual-ready (Arabic / English) and AA-accessible by construction."
+    ],
+    "rules": [
+      { "name": "The One Seal Rule", "body": "Gold appears on at most 10% of any screen. It marks the single thing that matters on a view. A second competing gold element breaks the seal.", "section": "colors" },
+      { "name": "The No-Cream Rule", "body": "The body surface is Paper White at chroma <=0.006 and lightness >=0.96, or the Ink Surface espresso. The warm-neutral cream/sand/parchment band (OKLCH L 0.84-0.97, C 0.01-0.06, hue 40-100) is forbidden as a background.", "section": "colors" },
+      { "name": "The Earned Kicker Rule", "body": "The small uppercase tracked label is allowed at most once per page, and only when it names a real system. Stacking it above every section is the AI eyebrow tell and is forbidden.", "section": "typography" },
+      { "name": "The Two-Face Rule", "body": "Exactly two families: Cormorant for display/title, Inter for everything else. Hierarchy comes from scale and weight, not new fonts.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Cards, inputs, and panels are flat at rest, defined by a hairline border and tonal steps. Shadow appears only on hover or for the two signature elements.", "section": "elevation" },
+      { "name": "The Rare-Glass Rule", "body": "backdrop-filter is permitted only on the scrolled navbar and mobile overlay. Decorative glass cards are forbidden.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the body on Paper White (#FBFBFA) or the Ink Surface espresso (#16130E); carry warmth through gold and Cormorant, never the background.",
+      "Do ration gold to <=10% of any screen (The One Seal Rule).",
+      "Do use Deep Gold (#8A6620) for small gold text and links on light; Antique Gold alone fails 4.5:1 at body size.",
+      "Do keep Muted Ink (#5E564B) for secondary copy; verify every text/background pair against AA.",
+      "Do design for Arabic / English from the start: logical CSS properties, an RTL-safe layout, and a language toggle.",
+      "Do give every animation a prefers-reduced-motion alternative.",
+      "Do lead sections with a strong Cormorant Headline; let scale and weight carry hierarchy.",
+      "Do earn trust with specifics: name the pharmacies, the sectors, the real operations."
+    ],
+    "donts": [
+      "Don't use cream / sand / parchment backgrounds (warm-neutral band OKLCH L 0.84-0.97, C 0.01-0.06, hue 40-100); it is the #1 AI tell and the brand's stated anti-reference.",
+      "Don't stack a tiny uppercase tracked eyebrow above every section; one earned kicker per page maximum.",
+      "Don't ship grids of identical icon + heading + text cards repeated endlessly.",
+      "Don't lean on the big-number hero-stats template (3 / 1 / 3) as the centerpiece.",
+      "Don't use gradient text or decorative gradient banners.",
+      "Don't use glassmorphism beyond the scrolled navbar and mobile overlay.",
+      "Don't use marketing buzzwords or salesy, aggressive CTAs.",
+      "Don't drift toward cold navy-and-blue SaaS styling or a dark hero with gradient blobs.",
+      "Don't introduce a third typeface or a second accent hue."
+    ]
+  }
+}

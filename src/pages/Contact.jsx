@@ -23,7 +23,7 @@ export default function Contact() {
           <p className="eyebrow">Let's Connect</p>
           <h1>Get in <span className="gold">Touch</span></h1>
           <p className="page-hero__sub">
-            Whether you're a brand exploring a partnership, an investor, or a supplier —
+            Whether you're a brand exploring a partnership, an investor, or a supplier,
             we're always open to meaningful conversations.
           </p>
         </div>
