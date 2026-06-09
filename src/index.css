@@ -4,9 +4,9 @@
 :root {
   --gold:      #C9A84C;
   --gold-light:#E2C97E;
-  --bg:        #090909;
-  --bg2:       #111111;
-  --bg3:       #161616;
+  --bg:        #1a1410;
+  --bg2:       #211a14;
+  --bg3:       #2a211a;
   --border:    rgba(201,168,76,0.15);
   --text:      #F0EDE8;
   --text-muted:#8A8680;
