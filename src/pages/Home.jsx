@@ -16,7 +16,7 @@ const ventures = [
     sector: 'Energy',
     title: 'Petrol Station',
     description:
-      'A state-of-the-art fuel station designed to serve the region with quality fuel and convenience services.',
+      'A fuel station designed to serve the region with quality fuel, EV charging, and convenience services.',
     brands: [],
     status: 'Opening Soon',
     statusClass: 'status--soon',

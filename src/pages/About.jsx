@@ -119,7 +119,7 @@ export default function About() {
                   <span className="status--soon">Opening Q3 2026</span>
                 </div>
               </div>
-              <p>A fully equipped fuel and convenience station in its final construction phase. Designed to deliver a premium refuelling experience with a focus on safety, efficiency, and service quality.</p>
+              <p>A fully equipped fuel and convenience station in its final construction phase, with EV charging bays alongside conventional pumps. Built around safety, efficiency, and service quality.</p>
             </div>
 
             <div className="venture-detail-card">
