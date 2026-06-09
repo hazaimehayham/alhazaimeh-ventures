@@ -153,6 +153,7 @@ p { text-wrap: pretty; }
   flex-shrink: 0;
 }
 .navbar--scrolled .navbar__logo-ah { color: var(--gold-deep); }
+.navbar__nav { display: flex; align-items: center; gap: 28px; }
 .navbar__links { display: flex; align-items: center; gap: 40px; }
 .navbar__links a {
   font-size: 12px; font-weight: 500; letter-spacing: 0.1em;
@@ -438,14 +439,16 @@ p { text-wrap: pretty; }
 @media (max-width: 640px) {
   .navbar__logo-text { display: none; }
   .navbar__burger { display: flex; }
-  .navbar__links {
+  .navbar__nav {
     position: fixed; inset: 0; top: var(--nav-h);
     background: rgba(251,251,250,0.98); backdrop-filter: blur(12px);
     flex-direction: column; align-items: center; justify-content: center;
-    gap: 40px; transform: translateX(100%); transition: transform 0.3s var(--ease);
+    gap: 36px; transform: translateX(100%); transition: transform 0.3s var(--ease);
     z-index: var(--z-overlay);
   }
-  .navbar__links--open { transform: translateX(0); }
+  [dir="rtl"] .navbar__nav { transform: translateX(-100%); }
+  .navbar__nav--open, [dir="rtl"] .navbar__nav--open { transform: translateX(0); }
+  .navbar__links { flex-direction: column; align-items: center; gap: 36px; }
   /* Overlay is always light: dark links regardless of scroll state */
   .navbar__links a, .navbar--scrolled .navbar__links a { color: var(--text-muted); font-size: 18px; }
   .navbar__links a:hover, .navbar__links a.active,
@@ -473,3 +476,98 @@ p { text-wrap: pretty; }
   }
   .btn:hover, .venture-card:hover, .leader-card:hover { transform: none; }
 }
+
+/* ── LANGUAGE TOGGLE ── */
+.lang-toggle {
+  font-family: var(--font-sans); font-size: 12px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer;
+  background: transparent; color: var(--on-dark);
+  border: 1px solid rgba(251,251,250,0.32); border-radius: 99px;
+  padding: 7px 14px; line-height: 1;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+.lang-toggle:hover { border-color: var(--gold-light); color: var(--gold-light); }
+.navbar--scrolled .lang-toggle { color: var(--text-muted); border-color: var(--border); }
+.navbar--scrolled .lang-toggle:hover { color: var(--gold-deep); border-color: var(--gold); }
+
+/* ── HERO MEDIA (atmospheric backdrop) ── */
+.hero__media { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; opacity: 0.20; filter: saturate(0.85); }
+.hero__media::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(22,19,14,0.55), rgba(22,19,14,0.86));
+}
+.hero__bg-grid { z-index: 1; }
+.hero__content { z-index: 2; }
+.hero__facts { z-index: 2; }
+
+/* ── ICONS ── */
+.venture-card__icon { color: var(--gold-deep); }
+.venture-card__icon svg { width: 30px; height: 30px; }
+.pillar-badge__icon { display: inline-flex; color: var(--gold-deep); }
+.pillar-badge__icon svg { width: 24px; height: 24px; }
+.pillar-badge__text { display: flex; flex-direction: column; }
+.pillar-badge__text strong { font-size: 14px; font-weight: 600; }
+.pillar-badge__text span { font-size: 12px; color: var(--text-muted); }
+.contact-item__icon { color: var(--gold-deep); }
+.contact-item__icon svg { width: 18px; height: 18px; }
+.venture-detail-card__icon { display: inline-flex; color: var(--gold-deep); }
+.venture-detail-card__icon svg { width: 26px; height: 26px; }
+.contact-topic__arrow { width: 16px; height: 16px; color: var(--gold-deep); flex-shrink: 0; }
+.contact-sent__icon svg { width: 26px; height: 26px; }
+
+/* ── FORM VALIDATION ── */
+.form-error { color: #B91C1C; font-size: 12px; margin-top: 2px; }
+.form-group input.has-error, .form-group textarea.has-error { border-color: #B91C1C; }
+.form-submit-error { color: #B91C1C; font-size: 13px; margin-bottom: 16px; }
+
+/* ── 404 ── */
+.notfound { min-height: 70vh; display: flex; align-items: center; }
+.notfound__code { font-family: var(--font-serif); font-size: clamp(64px, 12vw, 120px); line-height: 1; color: var(--gold-light); margin-bottom: 8px; }
+.notfound__cta { margin-top: 32px; }
+
+/* ── SCROLL REVEAL (gated on JS so no-JS / headless ship visible) ── */
+.js-reveal .reveal {
+  opacity: 0; transform: translateY(18px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transition-delay: calc(var(--d, 0) * 80ms);
+  will-change: opacity, transform;
+}
+.js-reveal .reveal.is-visible { opacity: 1; transform: none; }
+
+@keyframes heroIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.js-reveal .hero__content > * { opacity: 0; animation: heroIn 0.8s var(--ease) forwards; }
+.js-reveal .hero__eyebrow { animation-delay: 0.05s; }
+.js-reveal .hero__title { animation-delay: 0.15s; }
+.js-reveal .hero__sub { animation-delay: 0.30s; }
+.js-reveal .hero__cta { animation-delay: 0.42s; }
+.js-reveal .hero__facts { opacity: 0; animation: heroIn 0.8s var(--ease) 0.54s forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
+  .js-reveal .hero__content > *, .js-reveal .hero__facts { opacity: 1; animation: none; }
+}
+
+/* ── RTL ADJUSTMENTS ── */
+.venture-card__brands li { padding-left: 0; padding-inline-start: 14px; }
+.venture-card__brands li::before { left: auto; inset-inline-start: 0; }
+[dir="rtl"] .contact-topic__arrow { transform: scaleX(-1); }
+[dir="rtl"] .value-card__line { margin-inline-start: auto; }
+[dir="rtl"] .hero__facts li + li::before { left: auto; right: -22px; }
+
+/* ── ARABIC TYPOGRAPHY ── */
+html[lang="ar"] {
+  --font-serif: 'Markazi Text', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Tajawal', 'Inter', system-ui, sans-serif;
+}
+html[lang="ar"] body { line-height: 1.8; }
+html[lang="ar"] .hero__title, html[lang="ar"] .page-hero h1 { line-height: 1.2; font-weight: 500; }
+/* Letter-spacing breaks Arabic letter joining; reset on tracked elements */
+html[lang="ar"] .eyebrow, html[lang="ar"] .hero__eyebrow, html[lang="ar"] .navbar__links a,
+html[lang="ar"] .btn, html[lang="ar"] .lang-toggle, html[lang="ar"] .venture-card__sector,
+html[lang="ar"] .venture-card__status, html[lang="ar"] .contact-item__label,
+html[lang="ar"] .contact-topics h4, html[lang="ar"] .form-group label,
+html[lang="ar"] .leader-card__title, html[lang="ar"] .footer__links h4,
+html[lang="ar"] .footer__contact h4, html[lang="ar"] .footer__tagline,
+html[lang="ar"] .footer__bottom p, html[lang="ar"] .stat__label,
+html[lang="ar"] .timeline__year { letter-spacing: normal; }
