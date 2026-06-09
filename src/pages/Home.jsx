@@ -22,13 +22,13 @@ const ventures = [
     statusClass: 'status--soon',
   },
   {
-    icon: '🍗',
-    sector: 'Food & Beverage',
-    title: 'F&B Expansion',
+    icon: '🧠',
+    sector: 'Healthcare Technology',
+    title: 'Proprietary Tech Platform',
     description:
-      'Pursuing a strategic licensing partnership with a leading regional fast-food brand to bring an iconic dining experience to our market.',
+      'Alhazaimeh Ventures is developing a proprietary technology platform for the pharmacy sector. Currently in private development — details available upon request.',
     brands: [],
-    status: 'In Negotiation',
+    status: 'In Development',
     statusClass: 'status--progress',
   },
 ]
@@ -47,7 +47,7 @@ export default function Home() {
           </h1>
           <p className="hero__sub">
             Alhazaimeh Ventures is a diversified holding group with active operations
-            across Healthcare, Energy, and Food & Beverage — driven by a commitment
+            across Healthcare, Energy, and Technology — driven by a commitment
             to long-term value and community impact.
           </p>
           <div className="hero__cta">
@@ -115,7 +115,7 @@ export default function Home() {
           <div className="values__grid">
             {[
               { title: 'Long-Term Vision', desc: 'We invest for decades, not quarters. Every decision is made with lasting impact in mind.' },
-              { title: 'Community First', desc: 'Our pharmacies, station, and dining ventures exist to serve the people around us.' },
+              { title: 'Community First', desc: 'Our pharmacies, station, and technology ventures exist to serve the people around us.' },
               { title: 'Operational Excellence', desc: 'From supply chain to customer experience, we hold every detail to the highest standard.' },
               { title: 'Trusted Partnerships', desc: 'We build relationships — with franchisors, suppliers, and regulators — based on integrity.' },
             ].map(v => (

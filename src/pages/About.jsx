@@ -2,7 +2,7 @@ const timeline = [
   { year: 'Foundation', event: 'Yousef Al-Hazaimeh establishes the first pharmacy, laying the cornerstone of what would become a multi-sector venture group.' },
   { year: 'Growth', event: 'The pharmacy portfolio expands to three locations — Sadaf, Kahal, and Edrak — serving thousands of customers across the region.' },
   { year: 'Diversification', event: 'Ayham Al-Hazaimeh joins leadership, and the group sets its sights on the energy sector with a new petrol station project.' },
-  { year: '2026', event: 'The petrol station nears completion. Strategic F&B licensing negotiations underway, marking a pivotal expansion into a third sector.' },
+  { year: '2026', event: 'The petrol station nears completion. A proprietary technology platform for the pharmacy sector enters private development, marking the group\'s expansion into Healthcare Technology.' },
 ]
 
 const leadership = [
@@ -43,13 +43,13 @@ export default function About() {
             <p>
               Founded by Yousef Al-Hazaimeh, the group began with a single pharmacy and
               an unwavering commitment to quality care. Over the years, that commitment
-              expanded beyond healthcare — into energy infrastructure and food & beverage
-              — creating a portfolio that serves communities at every level of daily life.
+              expanded beyond healthcare — into energy infrastructure and proprietary
+              technology — creating a portfolio that serves communities at every level of daily life.
             </p>
             <p>
               Today, Alhazaimeh Ventures operates three pharmacies, is finalising a
-              petrol station, and is actively pursuing a prestigious F&B licensing
-              agreement. Each venture is chosen not just for financial returns, but for
+              petrol station, and is developing a proprietary technology platform for the
+              pharmacy sector. Each venture is chosen not just for financial returns, but for
               the value it brings to the people we serve.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function About() {
             {[
               { icon: '⚕', label: 'Healthcare', sub: '3 Pharmacies' },
               { icon: '⛽', label: 'Energy', sub: 'Petrol Station' },
-              { icon: '🍗', label: 'F&B', sub: 'Expansion' },
+              { icon: '🧠', label: 'Technology', sub: 'In Development' },
             ].map(p => (
               <div className="pillar-badge" key={p.label}>
                 <span className="pillar-badge__icon">{p.icon}</span>
@@ -74,7 +74,7 @@ export default function About() {
         <div className="container">
           <div className="section__header">
             <p className="eyebrow">Our Journey</p>
-            <h2>From One Pharmacy to Three Sectors</h2>
+            <h2>From One Pharmacy to a Diversified Group</h2>
           </div>
           <div className="timeline">
             {timeline.map((item, i) => (
@@ -127,13 +127,13 @@ export default function About() {
 
             <div className="venture-detail-card">
               <div className="venture-detail-card__header">
-                <span>🍗</span>
+                <span>🧠</span>
                 <div>
-                  <h3>F&B Licensing</h3>
-                  <span className="status--progress">In Negotiation</span>
+                  <h3>Proprietary Tech Platform</h3>
+                  <span className="status--progress">In Development</span>
                 </div>
               </div>
-              <p>Alhazaimeh Ventures is in active discussions to secure a licensing agreement with a leading regional fast-food brand. This partnership would mark the group's entry into the fast-food sector and expand its reach into a high-growth market.</p>
+              <p>Alhazaimeh Ventures is developing a proprietary technology platform for the pharmacy sector. Currently in private development — details available upon request.</p>
             </div>
           </div>
         </div>
